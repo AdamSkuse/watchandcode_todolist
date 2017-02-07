@@ -1,0 +1,8 @@
+ToDo List
+Workthrough of the ToDo list tutorial on watchandcode.com
+
+v2 requirements:
+- It should have a function to store todos
+- It should have a function to display todos
+- It should have a function to add todos
+- It should have a function to delete todos
