@@ -9,3 +9,12 @@ v2 requirements:
 
 v3 requirements:
 - all of the above, storing todos as objects
+- It should have a function for marking todos as completed
+
+v4 requirements:
+- refactor codes into a todoList object, which contains above functions as methods
+
+v5 requirements:
+- .displayTodos should show .todoText
+- .displayTodos should tell you if todos is empty
+- .displayTodos should show if task is completed
