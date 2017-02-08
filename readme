@@ -18,3 +18,7 @@ v5 requirements:
 - .displayTodos should show .todoText
 - .displayTodos should tell you if todos is empty
 - .displayTodos should show if task is completed
+
+v6 requirements:
+- .toggleAll: if all tasks are incomplete, change all tasks to 'complete'
+- otherwise, mark every task complete
