@@ -22,3 +22,9 @@ v5 requirements:
 v6 requirements:
 - .toggleAll: if all tasks are incomplete, change all tasks to 'complete'
 - otherwise, mark every task complete
+
+v7 requirements:
+- there should be a "Display Todos" button and a "Toggle All" button
+- Clicking "Display Todos" should run todoList.displayTodos();
+- Clicking "Toggle All" should run todolist.toggleAll();
+
