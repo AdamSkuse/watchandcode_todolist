@@ -1,7 +1,7 @@
 var todoList = {
-	todos: ["item 1", "item 2", "item 3"],
+	todos: [],
 	displayTodos: function() {
-		console.log(this.todos);
+		console.log("My todos: ", this.todos);
 	},
 	addTodo: function(todo) {
 		this.todos.push(todo);
@@ -15,6 +15,6 @@ var todoList = {
 		this.todos.splice(index, 1);
 		this.displayTodos();
 	}
-}
+};
 
 

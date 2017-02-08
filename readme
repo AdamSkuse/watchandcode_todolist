@@ -6,3 +6,6 @@ v2 requirements:
 - It should have a function to display todos
 - It should have a function to add todos
 - It should have a function to delete todos
+
+v3 requirements:
+- all of the above, storing todos as objects
