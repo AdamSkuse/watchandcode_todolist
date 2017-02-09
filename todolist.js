@@ -70,8 +70,12 @@ var handlers = {
         todoList.changeTodo(changeTodoPosition.valueAsNumber, changeTodoTextInput.value);
         changeTodoPosition.value = "";
         changeTodoTextInput.value = "";
+    },
+    deleteTodo: function(){
+        deleteTodoPosition = document.getElementById("deleteTodoPosition");
+        todoList.deleteTodo(deleteTodoPosition.valueAsNumber);
+        deleteTodoPosition.value = "";
     }
-
 };
 
 
