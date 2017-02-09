@@ -28,3 +28,8 @@ v7 requirements:
 - Clicking "Display Todos" should run todoList.displayTodos();
 - Clicking "Toggle All" should run todolist.toggleAll();
 
+v8 requirements:
+- it should have working controls for .addTodo
+- it should have working controls for .changeTodo
+- it should have working controls for .deleteTodo
+- it should have working controls for .toggleCompleted
