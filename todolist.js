@@ -63,7 +63,15 @@ var handlers = {
         addTodoTextInput = document.getElementById("addTodoTextInput");
         todoList.addTodo(addTodoTextInput.value);
         addTodoTextInput.value = "";
+    },
+    changeTodo: function(){
+        changeTodoPosition = document.getElementById("changeTodoPosition");
+        changeTodoTextInput = document.getElementById("changeTodoTextInput");
+        todoList.changeTodo(changeTodoPosition.valueAsNumber, changeTodoTextInput.value);
+        changeTodoPosition.value = "";
+        changeTodoTextInput.value = "";
     }
+
 };
 
 
