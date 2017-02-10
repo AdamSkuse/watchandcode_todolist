@@ -83,5 +83,24 @@ var handlers = {
     }
 };
 
+var populateTodoList = function(){
 
+    var list = document.getElementById("todoList");
+    while (list.hasChildNodes()) {
+        list.removeChild(list.firstChild);;
+    }
+    for (var i = 0; i < todoList.todos.length; i++){
+        var todoText = todoList.todos[i].todoText;
+        var todoCompleted = todoList.todos[i].completed;
+        var li = document.createElement("li");
+        var t = document.createTextNode(todoText);
+        li.appendChild(t);
+        var checkBox = document.createTextNode("( )");
+        if (todoCompleted) {
+            checkBox = document.createTextNode("(x)");
+        }
+        li.appendChild(checkBox);
+        list.appendChild(li);
+    }
+};
     

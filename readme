@@ -33,3 +33,8 @@ v8 requirements:
 - it should have working controls for .changeTodo
 - it should have working controls for .deleteTodo
 - it should have working controls for .toggleCompleted
+
+v9 requirements:
+- There should be an <li> element for every todo
+- Each <li> element should contain .todoText
+- Each <li> element should show .completed
