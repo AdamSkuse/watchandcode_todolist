@@ -69,21 +69,20 @@ var view = {
 
     var todosUl = document.getElementById("todoList");
     todosUl.innerHTML = ""; 
-   
-        for (var i = 0; i < todoList.todos.length; i++){
-           var todoLi = document.createElement("li");
-           var todo = todoList.todos[i];
-           var todoTextWithCompletion = "";
-           if (todo.completed === true) {
-              todoTextWithCompletion = todo.todoText + " (x) ";
-              } else {
-              todoTextWithCompletion = todo.todoText + " () ";
-         }
-        todoLi.id = i;
-        todoLi.textContent = todoTextWithCompletion;
-        todoLi.appendChild(this.createDeleteButton());
-        todosUl.appendChild(todoLi);
-    }
+    todoList.todos.forEach(function(todo, position) {
+             var todoLi = document.createElement("li");
+             var todoTextWithCompletion = "";
+             if (todo.completed === true) {
+             todoTextWithCompletion = todo.todoText + " (x) ";
+             } else {
+             todoTextWithCompletion = todo.todoText + " () ";
+             }
+
+            todoLi.id = position;
+            todoLi.textContent = todoTextWithCompletion;
+            todoLi.appendChild(this.createDeleteButton());
+            todosUl.appendChild(todoLi);
+        }, this);
     },
     createDeleteButton: function(){
         var deleteButton = document.createElement("button");
