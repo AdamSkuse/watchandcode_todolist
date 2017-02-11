@@ -78,12 +78,13 @@ var view = {
            var todo = todoList.todos[i];
            var todoTextWithCompletion = "";
            if (todo.completed === true) {
-              todoTextWithCompletion = todo.todoText + " (x)";
+              todoTextWithCompletion = todo.todoText + " (x) ";
               } else {
-              todoTextWithCompletion = todo.todoText + " ()";
+              todoTextWithCompletion = todo.todoText + " () ";
          }
 
         todoLi.textContent = todoTextWithCompletion;
+        todoLi.appendChild(this.createDeleteButton());
         todosUl.appendChild(todoLi);
     }
     },
